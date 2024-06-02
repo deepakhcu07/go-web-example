@@ -1,0 +1,51 @@
+<p class="lead">
+    Epoch Converter,
+    Enjoy Playing with Unix Timestamps
+</p>
+
+<hr class="hr" />
+
+<div class="container text-center">
+    <div class ="row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Epoch: </span>
+                <input type="number"  class="form-control" aria-label="Epoch">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Date: </span>
+                <input type="date"  class="form-control" aria-label="Date Time">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-3">
+                <button type="button" class="btn btn-primary">Convert</button>
+            </div>
+        </div>
+    </div>
+    <hr class="hr" />
+    <div class="row">
+        <div class="col">
+            <p class="lead"> Epoch to Human Readable </p>
+
+            <span class="input-group-text">Epoch:
+                <input type="number"  class="form-control" aria-label="Epoch">
+            </span>
+
+
+            <div>
+                <p class="text-start"> Epoch Time in Seconds: {{ .EpochInSeconds }}</p>
+                <p class="text-start"> Epoch Time in Millis: {{ .EpochInMillis }}</p>
+                <p class="text-start"> Epoch Time in Micro: {{ .EpochInMicro }}</p>
+                <p class="text-start"> Epoch Time in Nano: {{ .EpochInNanoSecond }}</p>
+            </div>
+        </div>
+<!--        <div class="vr" style="height: 250px;"></div>-->
+        <div class="col">
+            <p class="lead"> Human Readable to Epoch </p>
+            <hr class="hr" />
+        </div>
+    </div>
+</div>
